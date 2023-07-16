@@ -1,30 +1,37 @@
+@import './../../styles/variables.scss';
+
 .actu{
   width: 100%;
   height: 100%;
-  background-color: orange;
+  background-color: $orangeLighten1;
 }
 
 .nousEcoleJohn{
   width: 100%;
   height: 100%;
-  background-color: rgb(145, 127, 92)}
+  background-color: $orangeLighten2;
+}
 
 .horsLesMurs{
   width: 100%;
   height: 100%;
-  background-color: rgb(118, 167, 90)}
+  background-color: $orangeLighten3;
+}
 
 .equipe{
   width: 100%;
   height: 100%;
-  background-color: rgb(92, 66, 175)}
+  background-color: $orangeLighten4;
+}
 
 .inscription{
   width: 100%;
   height: 100%;
-  background-color: rgb(158, 98, 77)}
+  background-color: $orangeLighten5;
+}
 
 .events{
   width: 100%;
   height: 100%;
-  background-color: rgb(63, 144, 94)}
+  background-color: $orangeLighten6;
+}

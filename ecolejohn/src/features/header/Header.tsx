@@ -28,7 +28,7 @@ const Header : React.FC = () => {
         <a id='nousEcoleJohnLink' className='header__link' href="#nousEcoleJohn">Nous L'EcoleJohn</a>
         <a id='horsLesMursLink' className='header__link' href="#horsLesMurs">Hors Les Murs</a>
 
-        <h1> Ecole John Music </h1>
+        <h1 id='name'> Ecole John </h1>
 
         <a id='equipeLink' className='header__link' href="#equipe">L'équipe</a>
         <a id='inscriptionLink' className='header__link' href="#inscription">Inscription</a>

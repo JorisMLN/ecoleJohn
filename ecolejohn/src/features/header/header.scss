@@ -5,9 +5,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $headerMain;
+  background-color: $One;
   min-height: 10vh;
   width: 100%;
+  box-shadow: 0px 2px 20px #b15000;
+
+  #name{
+    color: $Ten;
+  }
 
   h1{
     margin-left: 30px;
@@ -31,77 +36,13 @@
     right: 40px;
   }
 
-  #startSmoke{
-    opacity: 0;
-    z-index: 1;
-    width: 60px;
-    position: absolute;
-    right: 30px;
-    top: 10px;
-  }
 
-  #arrivalSmoke{
-    opacity: 0;
-    z-index: 1;
-    width: 60px;
-    position: absolute;
-    right: 50px;
-    top: 10px;
-  }
-
-  #policeCar{
-    opacity: 1;
-    z-index: 1;
-    width: 60px;
-    position: absolute;
-    right: -100px;
-    top: 10px;
-  }
 
   .animKart{
     animation: kart 4000ms both;
     animation-timing-function: cubic-bezier(.34,.08,.2,.99);
   }
 
-  .animPoliceCar{
-    animation: policeCar 4000ms 300ms both;
-    animation-timing-function: cubic-bezier(.34,.08,.2,.99);
-  }
-
-  .animStartSmoke{
-    animation: startSmoke 1000ms 300ms;
-    animation-timing-function: cubic-bezier(.34,.08,.2,.99);
-  }
-
-  .animArrivalSmoke{
-    animation: arrivalSmoke 1000ms 3900ms;
-    animation-timing-function: cubic-bezier(.34,.08,.2,.99);
-  }
-
-  .contentDodge1{
-    animation: contentDodge 2000ms 220ms;
-    animation-timing-function: cubic-bezier(.34,.08,.2,.99);
-  }
-
-  .contentDodge2{
-    animation: contentDodge 2000ms 250ms;
-    animation-timing-function: cubic-bezier(.34,.08,.2,.99);
-  }
-
-  .contentDodge3{
-    animation: contentDodge 2000ms 300ms;
-    animation-timing-function: cubic-bezier(.34,.08,.2,.99);
-  }
-
-  .contentDodge4{
-    animation: contentDodge 2000ms 340ms;
-    animation-timing-function: cubic-bezier(.34,.08,.2,.99);
-  }
-
-  .contentDodge5{
-    animation: contentDodge 2000ms 380ms;
-    animation-timing-function: cubic-bezier(.34,.08,.2,.99);
-  }
 }
 
 // - - - - - - - - - KEYFRAMES - - - - - - - - - //
@@ -138,61 +79,5 @@
   }
   to{
     transform: rotate(0turn);
-  }
-}
-
-@keyframes policeCar {
-  from{
-    transform: translateX(0px);
-  }
-  
-  to{
-    transform: translateX(-2200px);
-  }
-}
-
-@keyframes startSmoke {
- 0%{
-  transform: translateX(0px);
-  opacity: 0;
- }
-
- 50%{
-  opacity: 1;
- }
-
- 100%{
-  transform: translateX(40px);
-  opacity: 0;
- }
-}
-
-@keyframes arrivalSmoke {
-  0%{
-    transform: translateX(0px);
-    opacity: 0;
-   }
-  
-   50%{
-    opacity: 1;
-   }
-  
-   100%{
-    transform: translateX(-20px) translateY(-20px);
-    opacity: 0;
-   }
-}
-
-@keyframes contentDodge {
-  0%{
-    transform: translateY(0px);
-  }
-  
-   50%{
-    transform: translateY(-80px)
-  }
-  
-   100%{
-    transform: translateY(0px)
   }
 }
