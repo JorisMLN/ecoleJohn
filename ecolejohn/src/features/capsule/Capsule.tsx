@@ -6,10 +6,12 @@ import Header from '../header/Header';
 import Footer from '../footer/Footer';
 import Kart from '../kart/kart';
 import SubCapsule from '../subCapsule/SubCapsule';
-import ContentOne from '../testComponent/contentOne';
-import ContentTwo from '../testComponent/contentTwo';
-import ContentThree from '../testComponent/contentThree';
-import ContentFour from '../testComponent/contentFour';
+import Actu from '../component/actu';
+import NousEcoleJohn from '../component/nousEcoleJohn';
+import HorsLesMurs from '../component/horsLesMurs';
+import Equipe from '../component/equipe';
+import Inscription from '../component/inscription';
+import Events from '../component/events';
 
 const Capsule : React.FC = () => {  
   interface State {
@@ -34,10 +36,12 @@ const Capsule : React.FC = () => {
 
         {kartState === false ?
         <div className='capsule__container'>
-          <SubCapsule child={<ContentOne />}/>
-          <SubCapsule child={<ContentTwo />}/>
-          <SubCapsule child={<ContentThree />}/>
-          <SubCapsule child={<ContentFour />}/>
+          <SubCapsule child={<Actu />}/>
+          <SubCapsule child={<NousEcoleJohn />}/>
+          <SubCapsule child={<HorsLesMurs />}/>
+          <SubCapsule child={<Equipe />}/>
+          <SubCapsule child={<Inscription />}/>
+          <SubCapsule child={<Events />}/>
         </div>
         :
         <div id='capsuleKart' className='capsule__kart'>
